@@ -1,0 +1,52 @@
+
+<html>
+<title></title>
+<head><h3>This webpage works best in Non-IE browsers. I will fix it in the future.</h3>
+<script type="text/javascript" src="json2.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="accessdb.js"></script>
+<script type="text/javascript" src="request_number.js"></script>
+<link rel="stylesheet" type="text/css" href="css/request_number_data.css" />
+
+<script>
+
+function reloadPage()
+  {
+  window.location.assign("index2.html");
+  }
+</script>
+
+</head>
+<body>
+<form name="req_numForm" action="" onsubmit="return validateForm()" method="post">
+<fieldset>
+<table id="thetable" border="1">
+<tr>
+<th>Request Number Search</th>
+</tr>
+<tr>
+<td>
+<textarea autofocus="autofocus" type="text" name="req_num" maxlength="1000000" rows="10" cols="99%">
+</textarea>
+</td>
+</tr>
+<tr>
+<td>
+<center>
+<button type="button" onclick="getRequestCCL()">Search</button>
+&nbsp;&nbsp;
+<input type="button" value="Clear" onclick="reloadPage()" />
+</center>
+</td>
+</tr>
+</table>
+<br /><br />
+<table border="1">
+<div id="myDiv"></div>
+</table>
+</fieldset>
+</form>
+</body>
+
+
+</html>
