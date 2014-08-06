@@ -22,7 +22,7 @@ var reqJSON = myDB.query(SQL, {json:true});
 			xyz.push(SearchRequest[i].request_number," ",SearchRequest[i].description," <b><i>translate " + SearchRequest[i].request_name + " go</i></b> ",SearchRequest[i].text+"<br />");
 			}
 			RLH=xyz.join("");
-			document.write(RLH);
+			document.write(RLH); //Need to fix the getElementByID section.
 			document.getElementById("myDiv").innerHTML=RLH;
 
 
