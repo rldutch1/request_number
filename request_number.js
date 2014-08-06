@@ -1,5 +1,5 @@
-var myDB = new ACCESSdb("E:\\Software\\GitHub_Repos\\request_number\\Request_Number.mdb", {showErrors:true});
-//var myDB = new ACCESSdb("C:\\Users\\rlholland\\Downloads\\ACCESSdb-v0.9.2\\ACCESSdb\\Request_Number.mdb", {showErrors:true});
+//var myDB = new ACCESSdb("E:\\Software\\GitHub_Repos\\request_number\\Request_Number.mdb", {showErrors:true});
+var myDB = new ACCESSdb("C:\\Users\\rlholland\\Downloads\\ACCESSdb-v0.9.2\\ACCESSdb\\Request_Number.mdb", {showErrors:true});
 
 var SQL = "SELECT distinct(request_number), description, request_name, text FROM request_number where request_number in (11000,12000,13000,14000,15000,16000)";
 
